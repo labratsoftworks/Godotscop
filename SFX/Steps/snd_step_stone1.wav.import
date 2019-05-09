@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/snd_step_stone1.wav-5dd7ca385fd2f35eb8ed8aa72ba485f5.sample"
+
+[deps]
+
+source_file="res://SFX/Steps/snd_step_stone1.wav"
+dest_files=[ "res://.import/snd_step_stone1.wav-5dd7ca385fd2f35eb8ed8aa72ba485f5.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

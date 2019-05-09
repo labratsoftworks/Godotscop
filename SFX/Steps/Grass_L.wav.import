@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Grass_L.wav-5c1a418423d08dc6eb1f7e2feb997d1f.sample"
+
+[deps]
+
+source_file="res://SFX/Steps/Grass_L.wav"
+dest_files=[ "res://.import/Grass_L.wav-5c1a418423d08dc6eb1f7e2feb997d1f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

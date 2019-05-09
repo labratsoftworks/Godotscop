@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Models/UVplane.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://shaders/backdrop_scroll.tres" type="Shader" id=2]
+[ext_resource path="res://Textures/GiftPlane/backgrounds/background_tile1.png" type="Texture" id=3]
+
+[sub_resource type="ShaderMaterial" id=8]
+shader = ExtResource( 2 )
+shader_param/VectorUniform = Vector3( 0.5, 0, 0 )
+shader_param/VectorUniform2 = Vector3( 3.55, 2.5, 0 )
+shader_param/tex_frg_13 = ExtResource( 3 )
+
+[node name="Scrolling_backdrop" type="MeshInstance"]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 8 )
+

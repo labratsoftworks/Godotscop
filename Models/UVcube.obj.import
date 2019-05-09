@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/UVcube.obj-30a414a84c7f0298baa666695f4a6ddd.mesh"
+
+[deps]
+
+files=[ "res://.import/UVcube.obj-30a414a84c7f0298baa666695f4a6ddd.mesh" ]
+
+source_file="res://Models/UVcube.obj"
+dest_files=[ "res://.import/UVcube.obj-30a414a84c7f0298baa666695f4a6ddd.mesh", "res://.import/UVcube.obj-30a414a84c7f0298baa666695f4a6ddd.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,30 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+
+uniform float lines_distance = 4.0;
+uniform float pixel_size = 1.0;
+uniform float size_screen = 600;
+uniform float scanline_alpha = 0.98;
+uniform float lines_velocity = 60;
+
+void fragment()
+{
+	float line_row = floor((SCREEN_UV.y * size_screen/pixel_size) + mod(TIME*lines_velocity, lines_distance));
+
+	float n = 1.0 - ceil((mod(line_row,lines_distance)/lines_distance));
+
+vec4 c = texture(SCREEN_TEXTURE,SCREEN_UV);
+c = c - n*c*(1.0 - scanline_alpha);
+c.a = 1.0;
+COLOR = c;
+}"
+
+[resource]
+shader = SubResource( 1 )
+shader_param/lines_distance = 4.0
+shader_param/pixel_size = 1.0
+shader_param/size_screen = 600.0
+shader_param/scanline_alpha = 0.98
+shader_param/lines_velocity = 60.0
